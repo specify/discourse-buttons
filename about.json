@@ -1,5 +1,5 @@
 {
-  "name": "Specify Theme Component"
+  "name": "Specify Discourse",
   "component": true,
   "license_url": null,
   "about_url": null,
@@ -10,5 +10,5 @@
   "assets": {},
   "color_schemes": {},
   "modifiers": {},
-  "learn_more": "https://discourse.specifysoftware.org/t/discourse-contribution-style-guide/2616"
+  "learn_more": "https://meta.discourse.org/t/beginners-guide-to-using-discourse-themes/91966"
 }
