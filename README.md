@@ -1,2 +1,2 @@
 # discourse-buttons
-Theme component for buttons on Discourse
+Theme component for Specify 7-like buttons and icons on Discourse
