@@ -51,3 +51,146 @@
 .d-wrap[data-wrap="simpleBtn"] {
     @include admonition(#000, #d1d5db, #9CA3AF, 1px);
 }
+
+// Warning message styles
+
+@mixin admonition($color, $bgcolor, $bordercolor, $iconurl) {
+    padding: 8px;
+    padding-left: 4em;
+    padding-right: 2em;
+    color: $color;
+    border-left: 5px solid $bordercolor;
+    background-color: $bgcolor;
+    background-image: url($iconurl);
+    background-repeat: no-repeat;
+    background-size: 2em;
+    background-position: 1em 1.25em;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
+    margin-bottom: 1em;
+}
+
+.d-wrap[data-wrap="info"] {
+    @include admonition(#084298, #cfe2ff, #b6d4fe, "https://emoji.discourse-cdn.com/apple/information_source.png");
+}
+
+.d-wrap[data-wrap="warning"] {
+    @include admonition(#664d03, #fff3cd, #ffecb5, "https://emoji.discourse-cdn.com/apple/warning.png");
+}
+
+.d-wrap[data-wrap="danger"] {
+    @include admonition(#842029, #f8d7da, #f5c2c7, "/images/emoji/google/stop_sign.png");
+}
+
+// Dark mode modifications
+
+.header-search-enabled .search-header a, .header-search-enabled .search-header a:visited {
+    color: #57c7fc;
+}
+
+.search-link .blurb {
+    color: var(--header_primary-very-high);
+}
+
+// Remove top margin on home page
+
+// .custom-homepage {
+//  #main-outlet {
+//      margin-top: 0px !important;
+//  }
+//}
+
+// Remove margin on top of the sidebar
+
+.custom-homepage {
+  #main-outlet-wrapper .sidebar-wrapper {
+        margin: 0 0 50px;
+    }
+}
+
+// Make header search match dark mode
+
+.title .search-header.show-header-results {
+    background-color: var(--active-color);
+}
+
+.title .search-header #search-term {
+    background-color: var(--active-color);
+}
+
+// grant's homemade contributions
+
+ .below-site-header-outlet.welcome-link-banner-connector .welcome-wrapper {
+     width: 90%;
+ }
+
+.welcome-wrapper {
+    border-radius: 1em;
+}
+
+.topic-body {
+    max-width: auto !important;
+}
+
+#main-outlet {
+    width: auto !important;
+}
+
+.display-search-banner #main-outlet {
+    padding-top: 20% !important;
+}
+
+.below-docs-topic-outlet.d-toc-wrapper {
+    display: none; /* This hides the table of contents from docs since it causes issues */
+ }
+
+.docs-search {
+    background-color: rgba(0,0,0,0) !important; /* This removes the color from behind the docs search */
+}
+
+.alert-too-few-topics {
+    display: none;
+  }
+
+// .topic-body .post-info.edits { /*This removes the revisions */
+//     display: none;
+// }
+
+img.avatar { /* Rounds avatar outlines 20%*/
+    border-radius: 0.5em !important;
+}
+
+.search-input {
+    border-radius: 8px;
+}
+
+.title .search-header {
+    margin-top: 0.7em;
+}
+
+.custom-search-banner-wrap h1 {
+    font-size: 2.5em !important;
+}
+
+.custom-search-banner-wrap {
+    padding: 2em 0 1em !important
+}
+
+.search-icon {
+    background: rgba(0,0,0,0);
+}
+
+.avatar-flair {
+    display: none !important;
+}
+
+.mobile-view #banner {
+    display: none;
+}
+
+#banner-content {
+    font-weight: 600;
+}
+
+#main-outlet {
+    padding-top: 1.25em !important;
+}
