@@ -28,16 +28,21 @@
     width: fit-content;
 }
 
+.d-wrap[data-wrap="specifyBtn"] {
+    @include admonition(#FFF, #687D3B, #687D3B, 0px);
+}
+
+// Backwards compatible button with old design
 .d-wrap[data-wrap="orangeBtn"] {
-    @include admonition(#FFF, #ff811a, #ff811a, 0px);
+    @include admonition(#FFF, #687D3B, #687D3B, 0px);
 }
 
 .d-wrap[data-wrap="blueBtn"] {
-    @include admonition(#FFF, #1d4ed8, #1d4ed8, 0px);
+    @include admonition(#FFF, #0074B5, #0074B5, 0px);
 }
 
 .d-wrap[data-wrap="greenBtn"] {
-    @include admonition(#FFF, #176534, #176534, 0px);
+    @include admonition(#FFF, #596c32, #596c32, 0px);
 }
 
 .d-wrap[data-wrap="grayBtn"] {
@@ -45,7 +50,7 @@
 }
 
 .d-wrap[data-wrap="redBtn"] {
-    @include admonition(#FFF, #b91c1c, #b91c1c, 0px);
+    @include admonition(#FFF, #b72f2f, #b72f2f, 0px);
 }
 
 .d-wrap[data-wrap="simpleBtn"] {
@@ -84,7 +89,7 @@
 // Dark mode modifications
 
 .header-search-enabled .search-header a, .header-search-enabled .search-header a:visited {
-    color: #57c7fc;
+    color: #cad5a8;
 }
 
 .search-link .blurb {
