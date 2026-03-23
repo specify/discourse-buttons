@@ -195,3 +195,62 @@ img.avatar { /* Rounds avatar outlines 20%*/
 #main-outlet {
     padding-top: 1.25em !important;
 }
+
+// Gray Background + Blue Header
+
+.above-main-container-outlet.welcome-link-banner-connectors .welcome-wrapper, .below-site-header-outlet.welcome-link-banner-connector .welcome-wrapper {
+   background: linear-gradient(69deg, #687D3B, #74914A);
+     animation: gradient 60s ease infinite; 
+    color: white;
+}
+
+.above-main-container-outlet.welcome-link-banner-connectors .welcome-wrapper, .below-site-header-outlet.welcome-link-banner-connector .welcome-wrapper {
+    a {
+        color: white;
+        font-weight: 600;
+    }
+}
+
+.above-main-container-outlet.welcome-link-banner-connectors .welcome-wrapper h3 {
+    color: white;
+}
+
+.above-main-container-outlet.welcome-link-banner-connectors .welcome-wrapper .featured-banner-link > div a .d-icon, .below-site-header-outlet.welcome-link-banner-connector .welcome-wrapper .featured-banner-link > div a .d-icon {
+    color: white;
+}
+
+.above-main-container-outlet.welcome-link-banner-connectors .welcome-wrapper .featured-banner-link > div a:hover .d-icon, .below-site-header-outlet.welcome-link-banner-connector .welcome-wrapper .featured-banner-link > div a .d-icon {
+    color: white;
+}
+
+html .background-container {
+    background: rgba(0,0,0,0) !important;
+}
+
+.above-main-container-outlet.welcome-link-banner-connectors .welcome-wrapper {
+    width: 98%;
+    padding: 0 10px;
+}
+
+@-webkit-keyframes gradient{
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+     background-position: 0% 50%;
+  }
+}
+@keyframes gradient{
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+     background-position: 0% 50%;
+  }
+}
