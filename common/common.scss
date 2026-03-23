@@ -203,7 +203,7 @@ img.avatar { /* Rounds avatar outlines 20%*/
 .below-site-header-outlet.welcome-link-banner-connectors .welcome-wrapper,
 .below-site-header-outlet.welcome-link-banner-connector .welcome-wrapper,
 .welcome-link-banner-wrapper .welcome-wrapper {
-    background: linear-gradient(69deg, #687D3B, #74914A);
+    background: linear-gradient(69deg, #687D3B, #74914A) !important;
     background-size: 200% 200%;
     animation: gradient 60s ease infinite;
     color: #fff;
