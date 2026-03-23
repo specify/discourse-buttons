@@ -198,36 +198,40 @@ img.avatar { /* Rounds avatar outlines 20%*/
 
 // Gray Background + Blue Header
 
-.above-main-container-outlet.welcome-link-banner-connectors .welcome-wrapper, .below-site-header-outlet.welcome-link-banner-connector .welcome-wrapper {
-   background: linear-gradient(69deg, #687D3B, #74914A);
-     animation: gradient 60s ease infinite; 
-    color: white;
-}
+.above-main-container-outlet.welcome-link-banner-connectors .welcome-wrapper,
+.above-main-container-outlet.welcome-link-banner-connector .welcome-wrapper,
+.below-site-header-outlet.welcome-link-banner-connectors .welcome-wrapper,
+.below-site-header-outlet.welcome-link-banner-connector .welcome-wrapper,
+.welcome-link-banner-wrapper .welcome-wrapper {
+    background: linear-gradient(69deg, #687D3B, #74914A);
+    background-size: 200% 200%;
+    animation: gradient 60s ease infinite;
+    color: #fff;
 
-.above-main-container-outlet.welcome-link-banner-connectors .welcome-wrapper, .below-site-header-outlet.welcome-link-banner-connector .welcome-wrapper {
     a {
-        color: white;
+        color: #fff;
         font-weight: 600;
     }
-}
 
-.above-main-container-outlet.welcome-link-banner-connectors .welcome-wrapper h3 {
-    color: white;
-}
+    h2,
+    h3,
+    p {
+        color: #fff;
+    }
 
-.above-main-container-outlet.welcome-link-banner-connectors .welcome-wrapper .featured-banner-link > div a .d-icon, .below-site-header-outlet.welcome-link-banner-connector .welcome-wrapper .featured-banner-link > div a .d-icon {
-    color: white;
-}
-
-.above-main-container-outlet.welcome-link-banner-connectors .welcome-wrapper .featured-banner-link > div a:hover .d-icon, .below-site-header-outlet.welcome-link-banner-connector .welcome-wrapper .featured-banner-link > div a .d-icon {
-    color: white;
+    .featured-banner-link > div a .d-icon,
+    .featured-banner-link > div a:hover .d-icon {
+        color: #fff;
+    }
 }
 
 html .background-container {
     background: rgba(0,0,0,0) !important;
 }
 
-.above-main-container-outlet.welcome-link-banner-connectors .welcome-wrapper {
+.above-main-container-outlet.welcome-link-banner-connectors .welcome-wrapper,
+.above-main-container-outlet.welcome-link-banner-connector .welcome-wrapper,
+.welcome-link-banner-wrapper .welcome-wrapper {
     width: 98%;
     padding: 0 10px;
 }
