@@ -196,32 +196,32 @@ img.avatar { /* Rounds avatar outlines 20%*/
     padding-top: 1.25em !important;
 }
 
-// Gray Background + Blue Header
+// Neutral welcome banner
 
 .above-main-container-outlet.welcome-link-banner-connectors .welcome-wrapper,
 .above-main-container-outlet.welcome-link-banner-connector .welcome-wrapper,
 .below-site-header-outlet.welcome-link-banner-connectors .welcome-wrapper,
 .below-site-header-outlet.welcome-link-banner-connector .welcome-wrapper,
 .welcome-link-banner-wrapper .welcome-wrapper {
-    background: linear-gradient(69deg, #687D3B, #74914A) !important;
-    background-size: 200% 200%;
-    animation: gradient 60s ease infinite;
-    color: #fff;
+    background: transparent !important;
+    background-image: none !important;
+    animation: none;
+    color: var(--primary);
 
     a {
-        color: #fff;
+        color: var(--primary);
         font-weight: 600;
     }
 
     h2,
     h3,
     p {
-        color: #fff;
+        color: var(--primary);
     }
 
     .featured-banner-link > div a .d-icon,
     .featured-banner-link > div a:hover .d-icon {
-        color: #fff !important;
+        color: var(--primary) !important;
     }
 }
 
@@ -234,27 +234,4 @@ html .background-container {
 .welcome-link-banner-wrapper .welcome-wrapper {
     width: 98%;
     padding: 0 10px;
-}
-
-@-webkit-keyframes gradient{
-  0% {
-    background-position: 0 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-     background-position: 0% 50%;
-  }
-}
-@keyframes gradient{
-  0% {
-    background-position: 0 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-     background-position: 0% 50%;
-  }
 }
