@@ -225,8 +225,11 @@ img.avatar { /* Rounds avatar outlines 20%*/
     }
 }
 
+html,
+body,
 html .background-container {
     background: #fff !important;
+    background-image: none !important;
 }
 
 .above-main-container-outlet.welcome-link-banner-connectors .welcome-wrapper,
