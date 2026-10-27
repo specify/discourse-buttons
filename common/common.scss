@@ -225,13 +225,6 @@ img.avatar { /* Rounds avatar outlines 20%*/
     }
 }
 
-html,
-body,
-html .background-container {
-    background: #f4f5f2 !important;
-    background-image: none !important;
-}
-
 // Remove the Air theme's decorative green page background while keeping
 // the welcome banner gradient above.
 body:not(.no-ember)::before {
