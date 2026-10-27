@@ -232,6 +232,12 @@ html .background-container {
     background-image: none !important;
 }
 
+// Remove the Air theme's decorative green page background while keeping
+// the welcome banner gradient above.
+body:not(.no-ember)::before {
+    display: none !important;
+}
+
 .above-main-container-outlet.welcome-link-banner-connectors .welcome-wrapper,
 .above-main-container-outlet.welcome-link-banner-connector .welcome-wrapper,
 .welcome-link-banner-wrapper .welcome-wrapper {
