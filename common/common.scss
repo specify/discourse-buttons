@@ -228,7 +228,7 @@ img.avatar { /* Rounds avatar outlines 20%*/
 html,
 body,
 html .background-container {
-    background: #fff !important;
+    background: #f4f5f2 !important;
     background-image: none !important;
 }
 
@@ -236,6 +236,81 @@ html .background-container {
 // the welcome banner gradient above.
 body:not(.no-ember)::before {
     display: none !important;
+}
+
+// Specify 7-inspired surfaces, spacing, and olive accents.
+:root {
+    --specify-green-dark: #598137;
+    --specify-green: #86965e;
+    --specify-green-light: #a4af83;
+    --specify-green-pale: #e0e2b9;
+    --specify-surface: #fff;
+    --specify-page: #f4f5f2;
+    --specify-border: #dfe3dc;
+    --specify-shadow: 0 2px 8px rgba(48, 63, 42, 0.08);
+}
+
+html body #main-outlet {
+    background: var(--specify-surface) !important;
+    border: 1px solid var(--specify-border);
+    border-radius: 0.75rem;
+    box-shadow: var(--specify-shadow);
+}
+
+html body #main-outlet-wrapper .sidebar-wrapper {
+    background: var(--specify-surface);
+    border: 1px solid var(--specify-border);
+    border-radius: 0.75rem;
+    box-shadow: var(--specify-shadow);
+}
+
+#navigation-bar .nav-pills > li > a,
+.list-controls .select-kit-header,
+.list-controls .btn,
+.topic-list thead,
+.topic-list .topic-list-item {
+    border-radius: 0.375rem;
+}
+
+#navigation-bar .nav-pills > li > a.active,
+#navigation-bar .nav-pills > li > a:hover,
+.list-controls .nav-pills > li > a.active,
+.list-controls .nav-pills > li > a:hover {
+    color: var(--specify-green-dark);
+    background: var(--specify-green-pale);
+}
+
+a,
+.link,
+.category-name {
+    color: var(--specify-green-dark);
+}
+
+a:hover,
+.link:hover,
+.category-name:hover {
+    color: var(--specify-green);
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:focus,
+.create-topic .btn {
+    background: var(--specify-green-dark) !important;
+    border-color: var(--specify-green-dark) !important;
+    color: #fff !important;
+}
+
+.category-list-item.category,
+.topic-list .topic-list-item {
+    border-color: var(--specify-border);
+    box-shadow: 0 1px 3px rgba(48, 63, 42, 0.05);
+}
+
+.category-list-item.category:hover,
+.topic-list .topic-list-item:hover {
+    border-color: var(--specify-green-light);
+    box-shadow: var(--specify-shadow);
 }
 
 .above-main-container-outlet.welcome-link-banner-connectors .welcome-wrapper,
