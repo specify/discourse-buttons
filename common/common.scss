@@ -329,9 +329,14 @@ a:hover,
 
 .above-main-container-outlet.welcome-link-banner-connectors .welcome-wrapper,
 .above-main-container-outlet.welcome-link-banner-connector .welcome-wrapper,
+.below-site-header-outlet.welcome-link-banner-connectors .welcome-wrapper,
+.below-site-header-outlet.welcome-link-banner-connector .welcome-wrapper,
 .welcome-link-banner-wrapper .welcome-wrapper {
-    width: 98%;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
     padding: 0 10px;
+    box-sizing: border-box;
 }
 
 @-webkit-keyframes gradient{
