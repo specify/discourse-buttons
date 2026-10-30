@@ -258,10 +258,10 @@ body:not(.no-ember)::before {
     --specify-green: #86965e;
     --specify-green-light: #a4af83;
     --specify-green-pale: #e0e2b9;
-    --specify-surface: #fff;
-    --specify-page: #f4f5f2;
-    --specify-border: #dfe3dc;
-    --specify-shadow: 0 2px 8px rgba(48, 63, 42, 0.08);
+    --specify-surface: var(--secondary);
+    --specify-page: var(--primary-very-low);
+    --specify-border: var(--primary-low);
+    --specify-shadow: var(--shadow-card);
 }
 
 html body #main-outlet {
